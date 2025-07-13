@@ -1,5 +1,11 @@
 import type { NextConfig } from "next"
+import dotenv from "dotenv";
+import dotenvExpand from "dotenv-expand";
+dotenvExpand.expand(dotenv.config({ path: "./.env" }));
 
+if (!process.env.MEDUSA_BACKEND_URL) {
+  throw new Error("MEDUSA_BACKEND_URL is not defined in .env file");
+}
 const nextConfig: NextConfig = {
   trailingSlash: false,
   reactStrictMode: true,
