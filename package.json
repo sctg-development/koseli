@@ -20,6 +20,7 @@
     "algoliasearch": "^5.20.3",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
+    "embla-carousel": "^8.6.0",
     "embla-carousel-react": "^8.5.2",
     "i18next": "^25.3.2",
     "i18next-browser-languagedetector": "^8.1.0",
@@ -66,5 +67,9 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "packageManager": "yarn@4.9.2",
+  "installConfig": {
+    "hoistingLimits": "dependencies"
   }
 }
